@@ -1,0 +1,15 @@
+body {
+    background-color: rgb(255, 243, 245);
+}
+
+.block {
+    color: red;
+}
+
+.block_bg {
+    background-color: black;
+}
+
+#item {
+    color: green;
+}
