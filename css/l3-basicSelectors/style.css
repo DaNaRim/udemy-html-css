@@ -1,0 +1,31 @@
+body {
+    background-color: rgb(255, 245, 233);
+}
+
+.links_item1 > a {
+    color: black;
+}
+
+.links_item2 a {
+    color: green;
+}
+
+.links > .links_item3 > a {
+    color: red;
+}
+
+[href] {
+    background-color: palegreen;
+}
+
+[href="https://www.instagram.com"] {
+    background-color: fuchsia;
+}
+
+[href^="https://www.telegram.com/"] {
+    background-color: gray;
+}
+
+[href$="items/item"] {
+    color: darkred;
+}
