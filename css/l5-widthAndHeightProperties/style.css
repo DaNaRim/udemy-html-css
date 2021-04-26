@@ -1,0 +1,31 @@
+/*.section {*/
+/*    width: 50%;*/
+/*}*/
+
+/*.block {*/
+/*    background-color: darkred;*/
+/*    width: 50%;*/
+/*    height: 100px;*/
+/*}*/
+
+.text {
+    width: 200px;
+    height: 100px;
+}
+
+.text {
+    font-size: 20px;
+    width: 1em;
+}
+
+.image {
+    width: 100%;
+}
+
+body {
+    /*background-color: rgb(255, 255, 255);*/
+    /*background-color: rgba(255, 255, 255, 0.5)*/
+    /*background-color: #cb2626;*/
+    /*background-color: blue;*/
+    background-color: transparent;
+}
