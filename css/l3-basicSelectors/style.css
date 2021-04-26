@@ -18,8 +18,8 @@ body {
     background-color: palegreen;
 }
 
-[href="https://www.instagram.com"] {
-    background-color: fuchsia;
+[href="https://learn.javascript.ru/css-selectors"] {
+    background-color: green;
 }
 
 [href^="https://www.telegram.com/"] {
