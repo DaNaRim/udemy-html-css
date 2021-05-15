@@ -1,0 +1,42 @@
+body {
+    background-color: rgb(241, 255, 216);
+    margin: 0;
+    height: 900px;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(222, 255, 165);
+}
+
+.block {
+    position: absolute;
+    bottom: -50px;
+    left: calc(50% - 50px);
+    height: 100px;
+    width: 100px;
+    background-color: darkmagenta;
+    box-shadow: 0 0 15px 0 darkmagenta;
+    border-radius: 100%;
+}
+
+.subscribe {
+    font-size: 30px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    border: 3px red dotted;
+    background-color: firebrick;
+    box-shadow: 0 0 15px 0 blue;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+}
