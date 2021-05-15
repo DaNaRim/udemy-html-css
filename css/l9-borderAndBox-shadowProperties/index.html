@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Lesson 9</title>
+</head>
+<body>
+<div class="wrap">
+    <div class="cart">
+        <div class="cart_image">
+            <img src="9.3 strawberry.jpg" alt="strawberry"/>
+        </div>
+        <div class="cart_content">
+            <div class="cart_title">Strawberry</div>
+            <div class="cart_cost">Cost <span>100</span>$</div>
+            <input type="number" class="cart_amount" value="1" min="1" max="100">
+            <input type="submit" class="cart_btn" value="Buy">
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    let amount = document.querySelector('.cart_amount'),
+        cost = document.querySelector('.cart_cost span');
+    amount.addEventListener('input', () => {
+        cost.innerHTML = amount.value * 100;
+    });
+</script>
+</html>
