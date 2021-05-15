@@ -1,0 +1,59 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 235, 235);
+}
+
+.block {
+    width: 250px;
+    height: 50px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    background-color: black;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.block:hover {
+    background-color: white;
+    color: black;
+}
+
+.block:active {
+    background-color: grey;
+}
+
+.link {
+    font-size: 60px;
+}
+
+.link:hover {
+    color: red;
+}
+
+.link:active {
+    color: blue;
+}
+
+.input {
+    font-size: 30px;
+    height: 40px;
+    width: 250px;
+}
+
+.input:hover {
+    background-color: green;
+}
+
+.input:active {
+    background-color: blue;
+}
+
+.input:focus {
+    background-color: red;
+}
