@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(241, 255, 216);
+    margin: 0;
+}
+
+.container {
+    min-height: 600px;
+    display: flex;
+    /*flex-direction: column;*/
+    justify-content: space-between;
+    /*align-items: center;*/
+    flex-wrap: wrap;
+}
+
+.item {
+    width: 70px;
+    height: 70px;
+    font-size: 60px;
+    margin: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    border: 3px green dotted;
+    background-color: orchid;
+    box-shadow: 0 0 15px 0 orchid;
+    cursor: pointer;
+}
