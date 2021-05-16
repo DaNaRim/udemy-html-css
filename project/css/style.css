@@ -1,0 +1,90 @@
+* {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.container {
+    padding: 80px;
+}
+
+/*
+Promo section
+*/
+
+.promo {
+    min-height: 750px;
+    background: url("../img/bg/promo_bg.png") center center/cover no-repeat;
+    padding: 50px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo_wrap {
+    display: flex;
+    align-items: center;
+}
+
+.logo_img {
+    margin-right: 10px;
+}
+
+.logo_text {
+    color: #ffffff;
+    line-height: 15px;
+    text-transform: uppercase;
+}
+
+.logo_text > span {
+    font-weight: 700;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav_list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav_item {
+    margin: 0 25px;
+    opacity: 0.85;
+    transition: opacity 0.3s ease;
+}
+
+.nav_item:hover {
+    opacity: 1;
+}
+
+.nav_item > a {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.promo_sign button {
+    padding: 6px 20px;
+    background-color: transparent;
+    border-radius: 2px;
+    border: 1px solid #ffffff;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.promo_sign button:focus {
+    outline: none;
+}
