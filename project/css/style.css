@@ -88,3 +88,104 @@ Promo section
 .promo_sign button:focus {
     outline: none;
 }
+
+.promo_content {
+    margin-top: 167px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.promo_text {
+    width: 45%;
+}
+
+.promo_title {
+    color: #ffffff;
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 65px;
+    text-transform: uppercase;
+}
+
+.promo_descr {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 35px;
+    opacity: 0.8;
+}
+
+.promo_btns {
+    margin-top: 38px;
+}
+
+.promo_btn {
+    width: 160px;
+    height: 55px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.promo_btn_black {
+    background-color: #061e37;
+    color: #ffffff;
+    margin-right: 30px;
+}
+
+.promo_btn_black:hover {
+    background-color: #ffffff;
+    color: #061e37;
+}
+
+.promo_btn_white {
+    background-color: #ffffff;
+    color: #061e37;
+}
+
+.promo_btn_white:hover {
+    background-color: #061e37;
+    color: #ffffff;
+}
+
+.promo_video {
+    position: relative;
+}
+
+.promo_video > video {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    border: 1px solid #061e37;
+}
+
+.promo_play {
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 75px);
+    width: 150px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    color: #061e37;
+    cursor: pointer;
+}
+
+.promo_play > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background-color: #061e37;
+    margin: 0 auto 22px auto;
+}
+
+.promo_play > div > i {
+    color: white;
+}
