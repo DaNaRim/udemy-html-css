@@ -11,8 +11,35 @@ a:hover {
     text-decoration: none;
 }
 
+button:focus {
+    outline: none;
+}
+
 .container {
     padding: 80px;
+}
+
+.title {
+    text-align: center;
+    color: #061e37;
+    font-weight: 600;
+    font-size: 45px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #b0bec5;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.descr {
+    color: #b0bec5;
+    line-height: 16px;
+    text-align: center;
+    margin: 24px auto 0 auto;
+    width: 560px;
 }
 
 /*
@@ -188,4 +215,77 @@ Promo section
 
 .promo_play > div > i {
     color: white;
+}
+
+/*
+Section useful
+*/
+
+.useful {
+    min-height: 800px;
+    padding: 100px 0;
+}
+
+.useful_content {
+    margin-top: 95px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.useful_item {
+    width: 27%;
+}
+
+.useful_icon {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.useful_icon > i {
+    font-size: 80px;
+}
+
+.fa-calendar-alt {
+    color: #b388ff;
+}
+
+.fa-user-alt {
+    color: #80d8ff;
+}
+
+.fa-fire {
+    color: #ea80fc;
+}
+
+.useful_title {
+    text-align: center;
+    color: #061e37;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.useful_descr {
+    text-align: center;
+    color: #78909c;
+    line-height: 20px;
+}
+
+.useful_btn {
+    display: block;
+    margin: 80px auto 0 auto;
+    height: 55px;
+    width: 150px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    background-color: #1de9b6;
+    border: none;
+    transition: all 0.3s ease;
+
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.useful_btn:hover {
+    background-color: #1db48d;
 }
