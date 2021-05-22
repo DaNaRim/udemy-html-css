@@ -289,3 +289,79 @@ Section useful
 .useful_btn:hover {
     background-color: #1db48d;
 }
+
+/*
+Section counts
+ */
+
+.progress {
+    display: flex;
+}
+
+.progress_item {
+    height: 150px;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress_item_business {
+    background-color: #80d8ff;
+}
+
+.progress_item_business i {
+    color: #80d8ff;
+}
+
+.progress_item_downloads {
+    background-color: #82b1ff;
+}
+
+.progress_item_downloads i {
+    color: #82b1ff;
+}
+
+.progress_item_installs {
+    background-color: #b388ff;
+}
+
+.progress_item_installs i {
+    color: #b388ff;
+}
+
+.progress_item_users {
+    background-color: #ea80fc;
+}
+
+.progress_item_users i {
+    color: #ea80fc;
+}
+
+.progress_wrap {
+    display: flex;
+    align-items: center;
+}
+
+.progress_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    background-color: #ffffff;
+    border-radius: 100%;
+    margin-right: 23px;
+}
+
+.progress_icon > i {
+    font-size: 30px;
+}
+
+.progress_text {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+}
+
