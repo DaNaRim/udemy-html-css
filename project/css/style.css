@@ -3,15 +3,11 @@
     font-size: 15px;
 }
 
-a {
+a, a:hover {
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: none;
-}
-
-button:focus {
+button:focus, div {
     outline: none;
 }
 
@@ -63,24 +59,14 @@ buttons
     margin-bottom: 0;
 }
 
-.btn_black {
+.btn_black, .btn_white:hover {
     background-color: #061e37;
     color: #ffffff;
 }
 
-.btn_black:hover {
+.btn_white, .btn_black:hover {
     background-color: #ffffff;
     color: #061e37;
-}
-
-.btn_white {
-    background-color: #ffffff;
-    color: #061e37;
-}
-
-.btn_white:hover {
-    background-color: #061e37;
-    color: #ffffff;
 }
 
 /*
@@ -476,7 +462,6 @@ tabs
     color: #061e37;
     font-weight: 600;
     line-height: 25px;
-    letter-spacing: 0.45px;
 }
 
 /*
@@ -556,4 +541,89 @@ section reviews
     color: #78909c;
     line-height: 25px;
     font-style: italic;
+}
+
+/*
+team section
+ */
+
+.team {
+    min-height: 760px;
+    padding: 100px 0 90px;
+}
+
+.team_descr {
+    margin-top: 30px;
+}
+
+.team_content {
+    margin-top: 100px;
+}
+
+/*
+carousel
+ */
+
+.carousel {
+    width: 850px;
+    margin: 0 auto;
+}
+
+.carousel_image {
+    height: 160px;
+    width: 160px;
+    border-radius: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.carousel_name {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #061e37;
+}
+
+.carousel_text {
+    margin-top: 20px;
+    line-height: 25px;
+    text-align: center;
+    color: #90a4ae;
+}
+
+.carousel_links {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel_links a {
+    margin-right: 30px;
+}
+
+.carousel_links a:last-child {
+    margin-right: 0;
+}
+
+.carousel_links i {
+    font-size: 20px;
+    color: #90a4ae;
+}
+
+.carousel_arrow {
+    position: absolute;
+    top: 50px;
+}
+
+.carousel_prev {
+    left: 0;
+}
+
+.carousel_next {
+    right: 0;
+}
+
+.carousel_arrow i {
+    font-size: 60px;
 }
