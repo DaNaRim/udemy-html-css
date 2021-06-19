@@ -46,17 +46,12 @@ buttons
 .btn {
     width: 160px;
     height: 55px;
-    margin: 0 15px 15px 0;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
     font-weight: 700;
     text-transform: uppercase;
     border: none;
     transition: all 0.3s ease;
-}
-
-.btn:last-child {
-    margin-bottom: 0;
 }
 
 .btn_black, .btn_white:hover {
@@ -67,6 +62,15 @@ buttons
 .btn_white, .btn_black:hover {
     background-color: #ffffff;
     color: #061e37;
+}
+
+.btn_green {
+    background-color: #1de9b6;
+    color: #ffffff;
+}
+
+.btn_green:hover {
+    background-color: #1db48d;
 }
 
 /*
@@ -171,6 +175,14 @@ Promo section
 
 .promo_btns {
     margin-top: 25px;
+}
+
+.promo_btn {
+    margin: 0 15px 15px 0;
+}
+
+.promo_btn:last-child {
+    margin-bottom: 0;
 }
 
 .promo_video {
@@ -279,21 +291,6 @@ Section useful
 .useful_btn {
     display: block;
     margin: 80px auto 0 auto;
-    height: 55px;
-    width: 150px;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
-    border-radius: 5px;
-    background-color: #1de9b6;
-    border: none;
-    transition: all 0.3s ease;
-
-    font-weight: 700;
-    color: #ffffff;
-    text-transform: uppercase;
-}
-
-.useful_btn:hover {
-    background-color: #1db48d;
 }
 
 /*
@@ -626,4 +623,89 @@ carousel
 
 .carousel_arrow i {
     font-size: 60px;
+}
+
+/*
+contact
+ */
+
+.contact {
+    min-height: 660px;
+    background-color: #fafafa;
+    padding: 50px 0 100px;
+}
+
+.contact_descr {
+    color: #061e37;
+    margin-top: 30px;
+}
+
+.contact_content {
+    display: flex;
+    justify-content: center;
+}
+
+/*
+form
+ */
+
+.form {
+    margin-top: 50px;
+    width: 600px;
+}
+
+.form_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.form_wrap:first-child {
+    margin-top: 0;
+}
+
+.form_input {
+    width: 280px;
+    height: 50px;
+    border-radius: 5px;
+    border: solid 1px #061e37;
+    color: #061e37;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0 20px;
+}
+
+.form_message {
+    width: 600px;
+    height: 150px;
+    resize: none;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    border: solid 1px #061e37;
+    color: #061e37;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.form_wrap label {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    color: #061e37;
+}
+
+.form_subs {
+    width: 16px;
+    height: 16px;
+    border: solid 2px #061e37;
+    margin-right: 10px;
+}
+
+.form_btn {
+    width: 130px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 500;
 }
