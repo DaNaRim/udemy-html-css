@@ -3,6 +3,10 @@
     font-size: 15px;
 }
 
+h6, h5, h4, h3, h2, h1 {
+    margin-bottom: 0;
+}
+
 a, a:hover {
     text-decoration: none;
 }
@@ -78,9 +82,9 @@ Promo section
 */
 
 .promo {
-    min-height: 750px;
     background: url(../img/bg/promo_bg.png) center center/cover no-repeat;
-    padding: 50px 0 185px 0;
+    padding-top: 50px;
+    padding-bottom: 185px;
 }
 
 .header {
@@ -88,16 +92,13 @@ Promo section
     justify-content: space-between;
 }
 
-.logo_wrap {
+.logo {
     display: flex;
     align-items: center;
 }
 
-.logo_img {
-    margin-right: 10px;
-}
-
 .logo_text {
+    margin-left: 10px;
     color: #ffffff;
     line-height: 15px;
     text-transform: uppercase;
@@ -110,19 +111,19 @@ Promo section
 .nav {
     display: flex;
     align-items: center;
-}
-
-.nav_list {
-    display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
 .nav_item {
-    margin: 0 25px;
+    margin-left: 50px;
     opacity: 0.85;
     transition: opacity 0.3s ease;
+}
+
+.nav_item:first-child {
+    margin-left: 0;
 }
 
 .nav_item:hover {
@@ -134,7 +135,7 @@ Promo section
     font-weight: 600;
 }
 
-.promo_sign button {
+.promo_sign {
     padding: 6px 20px;
     background-color: transparent;
     border-radius: 2px;
@@ -167,6 +168,7 @@ Promo section
 }
 
 .promo_descr {
+    margin-top: 20px;
     color: #ffffff;
     font-size: 18px;
     line-height: 35px;
@@ -183,6 +185,7 @@ Promo section
 
 .promo_btn:last-child {
     margin-bottom: 0;
+    margin-right: 0;
 }
 
 .promo_video {
@@ -229,23 +232,20 @@ Section useful
 */
 
 .useful {
-    min-height: 800px;
-    padding: 100px 0;
-}
-
-.useful_item_title {
-    margin-bottom: 15px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .useful_subtitle {
-    margin-bottom: 20px;
+    margin-top: 15px;
 }
 
 .useful_descr {
-    margin-bottom: 100px;
+    margin-top: 20px;
 }
 
 .useful_content {
+    margin-top: 100px;
     display: flex;
     justify-content: space-between;
 }
@@ -254,12 +254,11 @@ Section useful
     width: 27%;
 }
 
-.useful_icon {
+.useful_item_icon {
     text-align: center;
-    margin-bottom: 45px;
 }
 
-.useful_icon > i {
+.useful_item_icon > i {
     font-size: 80px;
 }
 
@@ -276,6 +275,7 @@ Section useful
 }
 
 .useful_item_title {
+    margin-top: 45px;
     text-align: center;
     color: #061e37;
     font-weight: 600;
@@ -283,6 +283,7 @@ Section useful
 }
 
 .useful_item_descr {
+    margin-top: 20px;
     text-align: center;
     color: #78909c;
     line-height: 20px;
@@ -354,7 +355,6 @@ Section counts
     width: 60px;
     background-color: #ffffff;
     border-radius: 100%;
-    margin-right: 23px;
 }
 
 .progress_icon > i {
@@ -362,6 +362,7 @@ Section counts
 }
 
 .progress_text {
+    margin-left: 23px;
     color: #ffffff;
     font-size: 20px;
     font-weight: 700;
@@ -376,12 +377,12 @@ section service
     padding: 100px 0;
 }
 
-.service_title {
-    margin-bottom: 30px;
+.service_descr {
+    margin-top: 30px;
 }
 
-.service_descr {
-    margin-bottom: 50px;
+.service_tabs {
+    margin-top: 50px;
 }
 
 /*
@@ -394,7 +395,7 @@ tabs
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     background-color: #ffffff;
-    margin: 0 auto 20px auto;
+    margin: 20px auto 0 auto;
     padding: 0 25px 25px 25px;
     display: flex;
     flex-direction: column;
@@ -404,8 +405,8 @@ tabs
     transition: all 0.5s ease;
 }
 
-.tabs_item:last-child {
-    margin-bottom: 0;
+.tabs_item:first-child {
+    margin-top: 0;
 }
 
 .tabs_item_active {
@@ -427,7 +428,7 @@ tabs
 
 .tabs_icon i {
     color: #061e37;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .tabs_title {
@@ -449,12 +450,11 @@ tabs
 .tabs_img {
     width: 35%;
     height: 155px;
-    background: url(../img/tabs/tab_img.png) center center/cover no-repeat;
     border-radius: 5px;
-    margin-right: 25px;
 }
 
 .tabs_text {
+    margin-left: 25px;
     width: 63%;
     color: #061e37;
     font-weight: 600;
@@ -466,19 +466,12 @@ section reviews
  */
 
 .reviews {
-    min-height: 565px;
     background: url(../img/bg/reviews_bg.png) center center/cover no-repeat;
-    padding: 90px 0;
-}
-
-.reviews_wrap {
+    padding-top: 90px;
+    padding-bottom: 90px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.reviews_about {
-    margin-right: 10%;
 }
 
 .reviews_title {
@@ -486,17 +479,20 @@ section reviews
     font-size: 45px;
     line-height: 50px;
     color: #ffffff;
-    margin-bottom: 20px;
 }
 
 .reviews_descr {
+    margin-top: 20px;
     font-size: 15px;
     color: #ffffff;
-    margin-bottom: 80px;
 }
 
+.reviews_btn {
+    margin-top: 80px;
+}
 
 .reviews_items {
+    margin-left: 160px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -505,21 +501,21 @@ section reviews
 .review {
     display: flex;
     align-items: center;
-    margin-bottom: 70px;
+    margin-top: 70px;
 }
 
-.review:last-child {
-    margin-bottom: 0;
+.review:first-child {
+    margin-top: 0;
 }
 
 .review_icon {
     height: 60px;
     width: 60px;
-    margin-right: 50px;
     border-radius: 50%;
 }
 
 .review_body {
+    margin-left: 50px;
     max-width: 650px;
     padding: 30px;
     border-radius: 5px;
@@ -531,10 +527,10 @@ section reviews
     font-size: 18px;
     font-weight: 700;
     color: #061e37;
-    margin-bottom: 10px;
 }
 
 .review_text {
+    margin-top: 10px;
     color: #78909c;
     line-height: 25px;
     font-style: italic;
@@ -545,7 +541,6 @@ team section
  */
 
 .team {
-    min-height: 760px;
     padding: 100px 0 90px;
 }
 
@@ -553,7 +548,7 @@ team section
     margin-top: 30px;
 }
 
-.team_content {
+.team_carousel {
     margin-top: 100px;
 }
 
@@ -563,7 +558,8 @@ carousel
 
 .carousel {
     width: 850px;
-    margin: 0 auto;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .carousel_image {
@@ -596,11 +592,11 @@ carousel
 }
 
 .carousel_links a {
-    margin-right: 30px;
+    margin-left: 30px;
 }
 
-.carousel_links a:last-child {
-    margin-right: 0;
+.carousel_links a:first-child {
+    margin-left: 0;
 }
 
 .carousel_links i {
@@ -614,6 +610,7 @@ carousel
 }
 
 .carousel_prev {
+    z-index: 100;
     left: 0;
 }
 
@@ -630,7 +627,6 @@ contact
  */
 
 .contact {
-    min-height: 660px;
     background-color: #fafafa;
     padding: 50px 0 100px;
 }
@@ -640,9 +636,8 @@ contact
     margin-top: 30px;
 }
 
-.contact_content {
-    display: flex;
-    justify-content: center;
+.contact_form {
+    margin: 50px auto 0 auto;
 }
 
 /*
@@ -650,7 +645,6 @@ form
  */
 
 .form {
-    margin-top: 50px;
     width: 600px;
 }
 
@@ -708,4 +702,56 @@ form
     height: 50px;
     font-size: 16px;
     font-weight: 500;
+}
+
+/*
+footer
+ */
+
+.footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #061e37;
+}
+
+.footer_wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.footer_wrap:first-child {
+    margin-top: 0;
+}
+
+.ft_submenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.ft_about_dot {
+    margin: 0 20px 0 20px;
+    height: 6px;
+    width: 6px;
+    background-color: #ffffff;
+    border-radius: 100%;
+}
+
+.ft_about_item a {
+    color: #ffffff;
+    opacity: 0.5;
+}
+
+.footer_links a {
+    opacity: 0.2;
+    font-size: 20px;
+    color: #ffffff;
+    margin-left: 20px;
+}
+
+.footer_links a:first-child {
+    margin-left: 0;
 }
