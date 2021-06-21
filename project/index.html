@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/bootstrap-reboot.css">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Roboto&display=swap"
-          rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Roboto&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="css/style.css">
@@ -15,9 +15,9 @@
     <title>Project</title>
 </head>
 <body>
-<section class="promo container">
+<section class="promo container" id="home">
     <header class="header">
-        <a href="#" class="logo">
+        <a href="#home" class="logo">
             <img src="icons/logo/logo.svg" alt="logo" class="logo_img">
             <div class="logo_text">
                 Dart<br>
@@ -25,13 +25,13 @@
             </div>
         </a>
         <ul class="nav">
-            <li class="nav_item"><a href="#">Home</a></li>
-            <li class="nav_item"><a href="#">Service</a></li>
-            <li class="nav_item"><a href="#">Extensions</a></li>
-            <li class="nav_item"><a href="#">Prising</a></li>
-            <li class="nav_item"><a href="#">Help</a></li>
+            <li class="nav_item"><a href="#home">Home</a></li>
+            <li class="nav_item"><a href="#useful">Useful</a></li>
+            <li class="nav_item"><a href="#service">Service</a></li>
+            <li class="nav_item"><a href="#team">Out Team</a></li>
+            <li class="nav_item"><a href="#contact">Contact</a></li>
         </ul>
-        <button class="promo_sign">sign up</button>
+        <button class="promo_sign" id="signBtn">sign up</button>
     </header>
     <div class="promo_content">
         <div class="promo_text">
@@ -45,13 +45,13 @@
                 laboris nisi ut aliquip ex ea commodo consequat.
             </div>
             <div class="promo_btns">
-                <button class="btn btn_black promo_btn">Buy now</button>
-                <button class="btn btn_white promo_btn">Try for free</button>
+                <button class="btn btn_black promo_btn" id="buyNowBtn">Buy now</button>
+                <button class="btn btn_white promo_btn" id="tryForFreeBtn">Try for free</button>
             </div>
         </div>
         <div class="promo_video">
-            <video width="600" height="320" src="video/testVideo.mp4" poster="video/poster.png"></video>
-            <div class="promo_play">
+            <video id="video" width="570" height="320" src="video/testVideo.mp4" poster="video/poster.png"></video>
+            <div class="promo_play" id="playVideo">
                 <div><i class="fas fa-play"></i></div>
                 Watch the video
             </div>
@@ -59,7 +59,7 @@
     </div>
 </section>
 
-<section class="useful container">
+<section class="useful container" id="useful">
     <h2 class="title">Ease & Useful</h2>
     <div class="subtitle useful_subtitle">Project Management Tool</div>
     <div class="descr useful_descr">
@@ -93,7 +93,9 @@
             </div>
         </div>
     </div>
-    <button class="btn btn_green useful_btn">Get started</button>
+    <a href="#contact">
+        <button class="btn btn_green useful_btn">Get started</button>
+    </a>
 </section>
 
 <section class="progress">
@@ -135,7 +137,7 @@
     </div>
 </section>
 
-<section class="service">
+<section class="service" id="service">
     <h2 class="title">Services</h2>
     <div class="descr service_descr">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -250,7 +252,9 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
             labore et dolore magna
         </div>
-        <button class="btn btn_black reviews_btn">Get started</button>
+        <a href="#contact">
+            <button class="btn btn_black reviews_btn">Get started</button>
+        </a>
     </div>
     <div class="reviews_items">
         <div class="review">
@@ -278,7 +282,7 @@
     </div>
 </section>
 
-<section class="team">
+<section class="team" id="team">
     <h2 class="title">Our Team</h2>
     <div class="descr team_descr">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
@@ -294,11 +298,11 @@
                 tempor incididunt
             </div>
             <div class="carousel_links">
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-dribbble"></i></a>
-                <a href="#"><i class="fab fa-behance"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.cn/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://dribbble.com/" target="_blank"><i class="fab fa-dribbble"></i></a>
+                <a href="https://www.behance.net/" target="_blank"><i class="fab fa-behance"></i></a>
             </div>
         </div>
         <div class="carousel_item">
@@ -310,11 +314,11 @@
                 tempor incididunt
             </div>
             <div class="carousel_links">
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-dribbble"></i></a>
-                <a href="#"><i class="fab fa-behance"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.cn/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://dribbble.com/" target="_blank"><i class="fab fa-dribbble"></i></a>
+                <a href="https://www.behance.net/" target="_blank"><i class="fab fa-behance"></i></a>
             </div>
         </div>
         <div class="carousel_item">
@@ -326,11 +330,11 @@
                 tempor incididunt
             </div>
             <div class="carousel_links">
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-dribbble"></i></a>
-                <a href="#"><i class="fab fa-behance"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.cn/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://dribbble.com/" target="_blank"><i class="fab fa-dribbble"></i></a>
+                <a href="https://www.behance.net/" target="_blank"><i class="fab fa-behance"></i></a>
             </div>
         </div>
         <div class="carousel_item">
@@ -342,23 +346,23 @@
                 tempor incididunt
             </div>
             <div class="carousel_links">
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-dribbble"></i></a>
-                <a href="#"><i class="fab fa-behance"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.cn/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://dribbble.com/" target="_blank"><i class="fab fa-dribbble"></i></a>
+                <a href="https://www.behance.net/" target="_blank"><i class="fab fa-behance"></i></a>
             </div>
         </div>
     </div>
 </section>
 
-<section class="contact">
+<section class="contact" id="contact">
     <h2 class="title">Contact Us</h2>
     <div class="descr contact_descr">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
         dolore magna
     </div>
-    <form action="#" class="form contact_form">
+    <form action="#" method="POST" class="form contact_form">
         <div class="form_wrap">
             <input type="text" name="firstName" class="form_input" placeholder="First name" required>
             <input type="text" name="lastName" class="form_input" placeholder="Last name" required>
@@ -380,7 +384,7 @@
 
 <footer class="footer container">
     <div class="footer_wrap">
-        <a href="#" class="logo">
+        <a href="#home" class="logo">
             <img src="icons/logo/logo.svg" alt="logo" class="logo_img">
             <div class="logo_text">
                 Dart<br>
@@ -388,11 +392,11 @@
             </div>
         </a>
         <ul class="nav">
-            <li class="nav_item"><a href="#">Home</a></li>
-            <li class="nav_item"><a href="#">Service</a></li>
-            <li class="nav_item"><a href="#">Extensions</a></li>
-            <li class="nav_item"><a href="#">Prising</a></li>
-            <li class="nav_item"><a href="#">Help</a></li>
+            <li class="nav_item"><a href="#home">Home</a></li>
+            <li class="nav_item"><a href="#useful">Useful</a></li>
+            <li class="nav_item"><a href="#service">Service</a></li>
+            <li class="nav_item"><a href="#team">Out Team</a></li>
+            <li class="nav_item"><a href="#contact">Contact</a></li>
         </ul>
     </div>
     <div class="footer_wrap">
@@ -404,13 +408,80 @@
             <li class="ft_about_item"><a href="#">About Us</a></li>
         </ul>
         <div class="footer_links">
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-dribbble"></i></a>
-            <a href="#"><i class="fab fa-behance"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.cn/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://dribbble.com/" target="_blank"><i class="fab fa-dribbble"></i></a>
+            <a href="https://www.behance.net/" target="_blank"><i class="fab fa-behance"></i></a>
         </div>
     </div>
 </footer>
+
+<div class="popup buy_now_popup">
+    <div class="popup_wrap">
+        <h2 class="title">Buy now</h2>
+        <form action="#" method="POST" class="form popup_form">
+            <div class="form_wrap">
+                <input type="text" name="firstName" class="form_input" placeholder="First name" required>
+                <input type="text" name="lastName" class="form_input" placeholder="Last name" required>
+            </div>
+            <div class="form_wrap">
+                <input type="email" name="email" class="form_input" placeholder="Email" required>
+                <input type="tel" name="tel" class="form_input" placeholder="Phone">
+            </div>
+            <textarea name="message" class="form_message" placeholder="Message" required></textarea>
+            <div class="form_wrap">
+                <label for="subs2">
+                    <input type="checkbox" id="subs2" name="subscribe" class="form_subs">
+                    subscribe to the newsletter
+                </label>
+                <input type="submit" class="btn btn_green form_btn" value="send">
+            </div>
+            <i class="fas fa-times popup_close"></i>
+        </form>
+    </div>
+</div>
+
+<div class="popup try_for_free_popup">
+    <div class="popup_wrap">
+        <h2 class="title">Try for free</h2>
+        <form action="#" method="POST" class="form popup_form">
+            <div class="form_wrap">
+                <input type="text" name="firstName" class="form_input" placeholder="First name" required>
+                <input type="text" name="lastName" class="form_input" placeholder="Last name" required>
+            </div>
+            <div class="form_wrap">
+                <input type="email" name="email" class="form_input" placeholder="Email" required>
+                <input type="tel" name="tel" class="form_input" placeholder="Phone">
+            </div>
+            <textarea name="message" class="form_message" placeholder="Message" required></textarea>
+            <div class="form_wrap">
+                <label for="subs3">
+                    <input type="checkbox" id="subs3" name="subscribe" class="form_subs">
+                    subscribe to the newsletter
+                </label>
+                <input type="submit" class="btn btn_green form_btn" value="send">
+            </div>
+            <i class="fas fa-times popup_close"></i>
+        </form>
+    </div>
+</div>
+
+<div class="popup popup_done">
+    <div class="popup_wrap">
+        <div class="popup_done_text">Message sent successfully</div>
+        <i class="fas fa-times popup_close"></i>
+    </div>
+</div>
+
+<div class="popup soon_popup">
+    <div class="popup_wrap">
+        <div class="soon_popup_text">
+            Coming soon!<br>
+            <span>never</span>
+        </div>
+        <i class="fas fa-times popup_close"></i>
+    </div>
+</div>
 </body>
 </html>
